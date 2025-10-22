@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anastasija Temova — Portfolio</title>
+  <meta name="description" content="Portfolio of Anastasija Temova — Computer Science student and developer.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta property="og:title" content="Anastasija Temova — Portfolio">
+  <meta property="og:description" content="Computer Science student from Skopje, based in Slovenia. ROS & Full-stack Developer at Ubiquity Robotics.">
+  <meta property="og:type" content="website">
+</head>
+
+<!-- log-diff-status test change -->
+
+<!-- Change made on test branch -->
+
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <img src="assets/AT.JPG" alt="Anastasija Temova" class="logo">
+      <span class="brand-text">Anastasija Temova</span>
+    </div>
+    <nav aria-label="Primary">
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul id="navList" class="nav-list">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" tabindex="-1">
+    <!-- Introduction Section (previously Hero) -->
+    <section id="introduction" class="card introduction">
+      <div>
+        <h1>Hi, I'm <span class="accent">Anastasija</span> 👋</h1>
+        <p class="lede">
+          Computer Science student from Skopje, North Macedonia — currently based in Slovenia. <br>
+          ROS Developer & Full-stack Developer at
+          <a href="https://www.ubiquityrobotics.com/" target="_blank" rel="noopener">Ubiquity Robotics</a>.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <img src="assets/AT.JPG" alt="Anastasija Temova" class="intro-photo" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I’m pursuing my bachelor’s degree and building a strong foundation in computer science principles and technologies.
+        I love solving complex problems and using technology to create meaningful impact.
+        Through studies and hands-on projects, I aim to deliver solutions that address current challenges while paving the way for future advancements.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <div class="controls">
+          <label class="sr-only" for="filter">Filter projects</label>
+          <input id="filter" class="input" placeholder="Filter by keyword (e.g. Python, ML, Java)">
+        </div>
+      </div>
+      <ul id="projectGrid" class="projects" aria-live="polite"></ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="card">
+      <h2>Achievements</h2>
+      <ul>
+        <li><strong>🏆 GDSC Core Member (2023–2024)</strong> — Certificate of Completion for serving as a Google Developer Student Club Core Member at the University of Primorska.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:temanastasa@gmail.com">temanastasa@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/anastasija-temova-558073212/" target="_blank" rel="noopener">Anastasija Temova</a></li>
+        <li>GitHub: <a href="https://github.com/ATemova" target="_blank" rel="noopener">ATemova</a></li>
+      </ul>
+
+      <!-- Static demo form -->
+      <form class="contact-form" aria-describedby="formHelp">
+        <div class="grid">
+          <label><span class="label">Name</span><input type="text" name="name" placeholder="Your name" required></label>
+          <label><span class="label">Email</span><input type="email" name="email" placeholder="you@example.com" required></label>
+        </div>
+        <label><span class="label">Message</span>
+          <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+          <span id="formHelp" class="secondary-text">This demo form does not send emails; it only displays a message.</span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <small>© <span id="y"></span> Anastasija Temova · <a href="#introduction">Back to top</a></small>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
