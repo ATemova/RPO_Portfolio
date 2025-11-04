@@ -1,0 +1,172 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio module &mdash; RPO Portfolio (Python Docs) 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RPO Portfolio (Python Docs)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">portfolio module</a><ul>
+<li><a class="reference internal" href="#portfolio.Portfolio"><code class="docutils literal notranslate"><span class="pre">Portfolio</span></code></a><ul>
+<li><a class="reference internal" href="#portfolio.Portfolio.author_name"><code class="docutils literal notranslate"><span class="pre">Portfolio.author_name</span></code></a></li>
+<li><a class="reference internal" href="#portfolio.Portfolio.email"><code class="docutils literal notranslate"><span class="pre">Portfolio.email</span></code></a></li>
+<li><a class="reference internal" href="#portfolio.Portfolio.github"><code class="docutils literal notranslate"><span class="pre">Portfolio.github</span></code></a></li>
+<li><a class="reference internal" href="#portfolio.Portfolio.intro"><code class="docutils literal notranslate"><span class="pre">Portfolio.intro()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#portfolio.preveri_email"><code class="docutils literal notranslate"><span class="pre">preveri_email()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RPO Portfolio (Python Docs)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">portfolio module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/portfolio.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-portfolio">
+<span id="portfolio-module"></span><h1>portfolio module<a class="headerlink" href="#module-portfolio" title="Link to this heading"></a></h1>
+<p>Ta modul predstavlja osnovne podatke o portfoliu in izpiše
+kratko predstavitev avtorja.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="portfolio.Portfolio">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">portfolio.</span></span><span class="sig-name descname"><span class="pre">Portfolio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">author_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">github</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#portfolio.Portfolio" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Predstavlja preprost osebni portfolio.</p>
+<dl>
+<dt>Atributi:</dt><dd><p>author_name: Ime in priimek lastnika portfolia.
+email: Kontaktni e-naslov.
+github: Povezava do GitHub profila.</p>
+</dd>
+<dt>Primer:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Portfolio</span><span class="p">(</span><span class="s2">&quot;Anastasija Temova&quot;</span><span class="p">,</span> <span class="s2">&quot;temanastasa@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/ATemova&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">intro</span><span class="p">()</span>
+<span class="go">&#39;Hello, I am Anastasija Temova. Contact: temanastasa@gmail.com • GitHub: https://github.com/ATemova&#39;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="portfolio.Portfolio.author_name">
+<span class="sig-name descname"><span class="pre">author_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#portfolio.Portfolio.author_name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="portfolio.Portfolio.email">
+<span class="sig-name descname"><span class="pre">email</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#portfolio.Portfolio.email" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="portfolio.Portfolio.github">
+<span class="sig-name descname"><span class="pre">github</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#portfolio.Portfolio.github" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="portfolio.Portfolio.intro">
+<span class="sig-name descname"><span class="pre">intro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#portfolio.Portfolio.intro" title="Link to this definition"></a></dt>
+<dd><p>Vrne kratek opis portfolia.</p>
+<dl class="simple">
+<dt>Vrne:</dt><dd><p>Niz z osnovnimi informacijami o avtorju.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="portfolio.preveri_email">
+<span class="sig-prename descclassname"><span class="pre">portfolio.</span></span><span class="sig-name descname"><span class="pre">preveri_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#portfolio.preveri_email" title="Link to this definition"></a></dt>
+<dd><p>Preveri, ali e-naslov vsebuje znak ‘&#64;’.</p>
+<dl class="simple">
+<dt>Argumenti:</dt><dd><p>email: E-naslov, ki ga želimo preveriti.</p>
+</dd>
+<dt>Vrne:</dt><dd><p>True, če e-naslov vsebuje ‘&#64;’, sicer False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Anastasija Temova.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
